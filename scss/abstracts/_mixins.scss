@@ -5,13 +5,10 @@
 }
 
 @mixin breakpoint($point) {
-    @if $point == large {
-        @media (min-width: 64.375em) { @content; }
+    @if $point == desktop {
+        @media (min-width: 746px) { @content; }
     }
-    @if $point == medium {
-        @media (min-width: 37.5em) and (max-width: 64.375em) { @content; }
-    }
-    @if $point == small {
-        @media (max-width: 37.5em) { @content; }
+    @if $point == mobile {
+        @media (max-width: 746px) { @content; }
     }
 }
