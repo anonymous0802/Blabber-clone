@@ -91,6 +91,10 @@ body {
           align-items: center;
 }
 
+.header__search--right .btn-search:hover {
+  color: #ffffff;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
