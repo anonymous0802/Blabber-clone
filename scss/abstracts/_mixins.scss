@@ -1,0 +1,17 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin breakpoint($point) {
+    @if $point == large {
+        @media (min-width: 64.375em) { @content; }
+    }
+    @if $point == medium {
+        @media (min-width: 37.5em) and (max-width: 64.375em) { @content; }
+    }
+    @if $point == small {
+        @media (max-width: 37.5em) { @content; }
+    }
+}
